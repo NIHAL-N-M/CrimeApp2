@@ -1,0 +1,321 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 01, 2025 - 18:24:27
+Django version 3.2.3, using settings 'project28.settings'
+Starting development server at http://0.0.0.0:8010/
+Quit the server with CONTROL-C.
+[01/Nov/2025 18:24:40] "GET / HTTP/1.1" 200 3516
+[01/Nov/2025 18:25:12] "GET / HTTP/1.1" 200 3516
+[01/Nov/2025 18:25:26] "POST /login HTTP/1.1" 302 0
+[01/Nov/2025 18:25:26] "GET /success HTTP/1.1" 200 10032
+/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/face_recognition_models/__init__.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+[ WARN:0@0.076] global loadsave.cpp:275 findDecoder imread_('/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/media/Photo%20on%2031-10-25%20at%207.17%E2%80%AFPM.jpg'): can't open/read file: check file path/integrity
+Could not load image: /Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/media/Photo%20on%2031-10-25%20at%207.17%E2%80%AFPM.jpg
+[01/Nov/2025 18:25:32] "GET /detectWithWebcam HTTP/1.1" 302 0
+[01/Nov/2025 18:25:32] "GET /success HTTP/1.1" 200 10052
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/multiprocessing/spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/multiprocessing/spawn.py", line 132, in _main
+    self = reduction.pickle.load(from_parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/facerecognititon/views.py", line 12, in <module>
+    from .serializers import FileSerializer
+  File "/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/facerecognititon/serializers.py", line 2, in <module>
+    from .models import File
+  File "/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/facerecognititon/models.py", line 23, in <module>
+    class User(models.Model):
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/db/models/base.py", line 108, in __new__
+    app_config = apps.get_containing_app_config(module)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/apps/registry.py", line 253, in get_containing_app_config
+    self.check_apps_ready()
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/apps/registry.py", line 136, in check_apps_ready
+    raise AppRegistryNotReady("Apps aren't loaded yet.")
+django.core.exceptions.AppRegistryNotReady: Apps aren't loaded yet.
+[01/Nov/2025 18:25:33] "GET /success HTTP/1.1" 200 9685
+[01/Nov/2025 18:25:35] "GET /view_citizens HTTP/1.1" 200 8159
+[01/Nov/2025 18:25:37] "GET /success HTTP/1.1" 200 9685
+[ WARN:0@13.465] global loadsave.cpp:275 findDecoder imread_('/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/media/Photo%20on%2031-10-25%20at%207.17%E2%80%AFPM.jpg'): can't open/read file: check file path/integrity
+Could not load image via OpenCV or PIL: /Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/media/Photo%20on%2031-10-25%20at%207.17%E2%80%AFPM.jpg: [Errno 2] No such file or directory: '/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/media/Photo%20on%2031-10-25%20at%207.17%E2%80%AFPM.jpg'
+[ WARN:0@15.568] global loadsave.cpp:275 findDecoder imread_('/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/media/Photo%20on%2031-10-25%20at%207.17%E2%80%AFPM_p22WpUF.jpg'): can't open/read file: check file path/integrity
+[01/Nov/2025 18:25:47] "POST /detectImage HTTP/1.1" 302 0
+[01/Nov/2025 18:25:47] "GET /success HTTP/1.1" 200 10040
+[ WARN:0@17.542] global loadsave.cpp:275 findDecoder imread_('/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/media/Photo%20on%2031-10-25%20at%207.17%E2%80%AFPM.jpg'): can't open/read file: check file path/integrity
+Could not load image: /Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/media/Photo%20on%2031-10-25%20at%207.17%E2%80%AFPM.jpg
+[01/Nov/2025 18:25:49] "GET /detectWithWebcam HTTP/1.1" 302 0
+[01/Nov/2025 18:25:49] "GET /success HTTP/1.1" 200 10052
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/multiprocessing/spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/multiprocessing/spawn.py", line 132, in _main
+    self = reduction.pickle.load(from_parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/facerecognititon/views.py", line 12, in <module>
+    from .serializers import FileSerializer
+  File "/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/facerecognititon/serializers.py", line 2, in <module>
+    from .models import File
+  File "/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/facerecognititon/models.py", line 23, in <module>
+    class User(models.Model):
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/db/models/base.py", line 108, in __new__
+    app_config = apps.get_containing_app_config(module)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/apps/registry.py", line 253, in get_containing_app_config
+    self.check_apps_ready()
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/apps/registry.py", line 136, in check_apps_ready
+    raise AppRegistryNotReady("Apps aren't loaded yet.")
+django.core.exceptions.AppRegistryNotReady: Apps aren't loaded yet.
+/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/facerecognititon/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 01, 2025 - 18:28:53
+Django version 3.2.3, using settings 'project28.settings'
+Starting development server at http://0.0.0.0:8010/
+Quit the server with CONTROL-C.
+[01/Nov/2025 18:29:51] "GET / HTTP/1.1" 200 3516
+/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/face_recognition_models/__init__.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+[ WARN:0@0.090] global loadsave.cpp:275 findDecoder imread_('/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/media/Photo%20on%2031-10-25%20at%207.17%E2%80%AFPM.jpg'): can't open/read file: check file path/integrity
+Could not load image: /Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/media/Photo%20on%2031-10-25%20at%207.17%E2%80%AFPM.jpg
+[01/Nov/2025 18:30:06] "GET /detectWithWebcam HTTP/1.1" 302 0
+[01/Nov/2025 18:30:06] "GET /success HTTP/1.1" 200 10052
+/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/face_recognition_models/__init__.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+[ WARN:1@3.145] global loadsave.cpp:275 findDecoder imread_('/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/media/Photo%20on%2031-10-25%20at%207.17%E2%80%AFPM.jpg'): can't open/read file: check file path/integrity
+Could not load image: /Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/media/Photo%20on%2031-10-25%20at%207.17%E2%80%AFPM.jpg
+[01/Nov/2025 18:30:09] "GET /detectWithWebcam HTTP/1.1" 302 0
+[01/Nov/2025 18:30:09] "GET /success HTTP/1.1" 200 10060
+Error processing media/Photo%20on%2031-10-25%20at%207.17%E2%80%AFPM.jpg: name 'os' is not defined
+Internal Server Error: /detectImage
+Traceback (most recent call last):
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/facerecognititon/views.py", line 231, in detectImage
+    img_path = _abs_media_path(img_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/facerecognititon/views.py", line 168, in _abs_media_path
+    abs_try = os.path.join(settings.BASE_DIR, p)
+              ^^
+NameError: name 'os' is not defined. Did you forget to import 'os'
+[01/Nov/2025 18:30:34] "POST /detectImage HTTP/1.1" 500 71166
+[01/Nov/2025 18:30:37] "GET /success HTTP/1.1" 200 9685
+[ WARN:2@32.031] global loadsave.cpp:275 findDecoder imread_('/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/media/Photo%20on%2031-10-25%20at%207.17%E2%80%AFPM.jpg'): can't open/read file: check file path/integrity
+Could not load image: /Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/media/Photo%20on%2031-10-25%20at%207.17%E2%80%AFPM.jpg
+[01/Nov/2025 18:30:38] "GET /detectWithWebcam HTTP/1.1" 302 0
+[01/Nov/2025 18:30:38] "GET /success HTTP/1.1" 200 10060
+[01/Nov/2025 18:31:21] "GET /success HTTP/1.1" 200 9685
+[01/Nov/2025 18:31:45] "GET /success HTTP/1.1" 200 9685
+[01/Nov/2025 18:31:47] "GET /spotted_criminals HTTP/1.1" 200 7515
+[01/Nov/2025 18:31:48] "GET /add_citizen HTTP/1.1" 200 9192
+[01/Nov/2025 18:32:18] "POST /save_citizen HTTP/1.1" 302 0
+[01/Nov/2025 18:32:18] "GET /add_citizen HTTP/1.1" 200 9630
+Internal Server Error: /save_citizen
+Traceback (most recent call last):
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/facerecognititon/views.py", line 78, in saveCitizen
+    rel_path = os.path.join(settings.MEDIA_URL.strip('/'), filename)
+               ^^
+NameError: name 'os' is not defined. Did you forget to import 'os'
+[01/Nov/2025 18:32:39] "POST /save_citizen HTTP/1.1" 500 66166
+[01/Nov/2025 18:34:23] "GET /add_citizen HTTP/1.1" 200 9192
+Internal Server Error: /save_citizen
+Traceback (most recent call last):
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/facerecognititon/views.py", line 78, in saveCitizen
+    rel_path = os.path.join(settings.MEDIA_URL.strip('/'), filename)
+               ^^
+NameError: name 'os' is not defined. Did you forget to import 'os'
+[01/Nov/2025 18:34:26] "POST /save_citizen HTTP/1.1" 500 66174
+[01/Nov/2025 18:34:30] "GET /view_citizens HTTP/1.1" 200 8159
+[01/Nov/2025 18:34:35] "GET /add_citizen HTTP/1.1" 200 9192
+[01/Nov/2025 18:34:36] "GET /success HTTP/1.1" 200 9685
+[01/Nov/2025 18:34:37] "GET /spotted_criminals HTTP/1.1" 200 7515
+[01/Nov/2025 18:34:41] "GET /view_citizens HTTP/1.1" 200 8159
+[01/Nov/2025 18:34:46] "GET /wanted_citizen/2/ HTTP/1.1" 302 0
+[01/Nov/2025 18:34:46] "GET /view_citizens HTTP/1.1" 200 8531
+/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/facerecognititon/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 01, 2025 - 18:34:57
+Django version 3.2.3, using settings 'project28.settings'
+Starting development server at http://0.0.0.0:8010/
+Quit the server with CONTROL-C.
+[01/Nov/2025 18:35:02] "GET /free_citizen/2/ HTTP/1.1" 302 0
+[01/Nov/2025 18:35:02] "GET /view_citizens HTTP/1.1" 200 8550
+[01/Nov/2025 18:35:13] "GET /spotted_criminals HTTP/1.1" 200 7515
+[01/Nov/2025 18:35:17] "GET /add_citizen HTTP/1.1" 200 9192
+[01/Nov/2025 18:35:50] "POST /save_citizen HTTP/1.1" 302 0
+[01/Nov/2025 18:35:50] "GET /view_citizens HTTP/1.1" 200 9145
+[01/Nov/2025 18:35:59] "GET /success HTTP/1.1" 200 9685
+/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/face_recognition_models/__init__.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+[ WARN:0@0.083] global loadsave.cpp:275 findDecoder imread_('/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/media/Photo%20on%2031-10-25%20at%207.17%E2%80%AFPM.jpg'): can't open/read file: check file path/integrity
+Could not load image: /Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/media/Photo%20on%2031-10-25%20at%207.17%E2%80%AFPM.jpg
+[01/Nov/2025 18:36:01] "GET /detectWithWebcam HTTP/1.1" 302 0
+[01/Nov/2025 18:36:01] "GET /success HTTP/1.1" 200 10052
+/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/face_recognition_models/__init__.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_filename
+[01/Nov/2025 18:37:25] "GET /success HTTP/1.1" 200 9685
+[01/Nov/2025 18:37:27] "GET /add_citizen HTTP/1.1" 200 9192
+[01/Nov/2025 18:37:29] "GET /success HTTP/1.1" 200 9685
+[01/Nov/2025 18:37:31] "GET /view_citizens HTTP/1.1" 200 8790
+[01/Nov/2025 18:37:38] "GET /wanted_citizen/2/ HTTP/1.1" 302 0
+[01/Nov/2025 18:37:38] "GET /view_citizens HTTP/1.1" 200 9162
+[01/Nov/2025 18:37:42] "GET /free_citizen/2/ HTTP/1.1" 302 0
+[01/Nov/2025 18:37:42] "GET /view_citizens HTTP/1.1" 200 9181
+[01/Nov/2025 18:37:44] "GET /wanted_citizen/3/ HTTP/1.1" 302 0
+[01/Nov/2025 18:37:44] "GET /view_citizens HTTP/1.1" 200 9162
+/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/facerecognititon/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 01, 2025 - 18:38:59
+Django version 3.2.3, using settings 'project28.settings'
+Starting development server at http://0.0.0.0:8010/
+Quit the server with CONTROL-C.
+[01/Nov/2025 18:39:29] "GET /view_citizens HTTP/1.1" 200 8791
+[01/Nov/2025 18:39:36] "GET /view_citizens HTTP/1.1" 200 8791
+[01/Nov/2025 18:39:37] "GET /view_citizens HTTP/1.1" 200 8791
+[01/Nov/2025 18:39:40] "GET /view_citizens HTTP/1.1" 200 8791
+[01/Nov/2025 18:39:44] "GET /spotted_criminals HTTP/1.1" 200 7515
+[01/Nov/2025 18:39:45] "GET /add_citizen HTTP/1.1" 200 9192
+[01/Nov/2025 18:39:47] "GET /view_citizens HTTP/1.1" 200 8791
+[01/Nov/2025 18:40:02] "GET /success HTTP/1.1" 200 10682
+[01/Nov/2025 18:40:07] "POST /clear_db HTTP/1.1" 302 0
+[01/Nov/2025 18:40:07] "GET /success HTTP/1.1" 200 11029
+[01/Nov/2025 18:40:08] "GET /success HTTP/1.1" 200 10682
+[01/Nov/2025 18:40:10] "GET /view_citizens HTTP/1.1" 200 7518
+/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/facerecognititon/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 01, 2025 - 18:42:35
+Django version 3.2.3, using settings 'project28.settings'
+Starting development server at http://0.0.0.0:8010/
+Quit the server with CONTROL-C.
+[01/Nov/2025 18:43:18] "GET /view_citizens HTTP/1.1" 200 7518
+[01/Nov/2025 18:43:19] "GET /view_citizens HTTP/1.1" 200 7518
+[01/Nov/2025 18:43:19] "GET /view_citizens HTTP/1.1" 200 7518
+[01/Nov/2025 18:43:19] "GET /view_citizens HTTP/1.1" 200 7518
+[01/Nov/2025 18:43:28] "GET /logout HTTP/1.1" 302 0
+[01/Nov/2025 18:43:28] "GET / HTTP/1.1" 200 3835
+[01/Nov/2025 18:43:42] "POST /login HTTP/1.1" 302 0
+[01/Nov/2025 18:43:42] "GET / HTTP/1.1" 200 3845
+[01/Nov/2025 18:43:50] "POST /login HTTP/1.1" 302 0
+[01/Nov/2025 18:43:50] "GET /success HTTP/1.1" 200 11029
+[01/Nov/2025 18:43:55] "GET /logout HTTP/1.1" 302 0
+[01/Nov/2025 18:43:55] "GET / HTTP/1.1" 200 3835
+[01/Nov/2025 18:44:04] "POST /login HTTP/1.1" 302 0
+[01/Nov/2025 18:44:04] "GET /success HTTP/1.1" 200 11029
+[01/Nov/2025 18:44:25] "GET /logout HTTP/1.1" 302 0
+[01/Nov/2025 18:44:25] "GET / HTTP/1.1" 200 3835
+[01/Nov/2025 18:44:27] "GET / HTTP/1.1" 200 3516
+[01/Nov/2025 18:44:27] "GET / HTTP/1.1" 200 3516
+[01/Nov/2025 18:44:27] "GET / HTTP/1.1" 200 3516
+[01/Nov/2025 18:44:27] "GET / HTTP/1.1" 200 3516
+[01/Nov/2025 18:44:27] "GET / HTTP/1.1" 200 3516
+[01/Nov/2025 18:44:35] "POST /login HTTP/1.1" 302 0
+[01/Nov/2025 18:44:35] "GET / HTTP/1.1" 200 3845
+[01/Nov/2025 18:45:04] "POST /login HTTP/1.1" 302 0
+[01/Nov/2025 18:45:04] "GET / HTTP/1.1" 200 3845
+[01/Nov/2025 18:46:03] "POST /login HTTP/1.1" 302 0
+[01/Nov/2025 18:46:03] "GET /success HTTP/1.1" 200 11023
+/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/project28/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 01, 2025 - 18:49:59
+Django version 3.2.3, using settings 'project28.settings'
+Starting development server at http://0.0.0.0:8010/
+Quit the server with CONTROL-C.
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/core/servers/basehttp.py", line 45, in get_internal_wsgi_application
+    return import_string(app_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/utils/module_loading.py", line 17, in import_string
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/nihalmagnur/Desktop/criminal-recognition-system-using-face-recognition-master/project28/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    return WSGIHandler()
+           ^^^^^^^^^^^^^
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/core/handlers/wsgi.py", line 127, in __init__
+    self.load_middleware()
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/core/handlers/base.py", line 40, in load_middleware
+    middleware = import_string(middleware_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/utils/module_loading.py", line 17, in import_string
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1310, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 138, in inner_run
+    handler = self.get_handler(*args, **options)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/contrib/staticfiles/management/commands/runserver.py", line 27, in get_handler
+    handler = super().get_handler(*args, **options)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 65, in get_handler
+    return get_internal_wsgi_application()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihalmagnur/miniforge3/lib/python3.12/site-packages/django/core/servers/basehttp.py", line 47, in get_internal_wsgi_application
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: WSGI application 'project28.wsgi.application' could not be loaded; Error importing module.
